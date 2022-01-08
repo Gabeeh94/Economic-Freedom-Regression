@@ -12,4 +12,4 @@ En primer lugar, utilizamos pandas para importar los datos y convertirlos en un 
 
 Después de esto, vamos a crear un scatterplot para ver si podemos ver a simple vista una relación en los datos.
 
-[](https://github.com/Gabeeh94/Economic-Freedom-Regression/blob/ff025d6a2656057c920f04567a7c4525c4c04acf/images/scatterplot.png)
+![](https://github.com/Gabeeh94/Economic-Freedom-Regression/blob/ff025d6a2656057c920f04567a7c4525c4c04acf/images/scatterplot.png)
