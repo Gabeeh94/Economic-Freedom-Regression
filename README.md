@@ -34,7 +34,7 @@ Luego de todo esto, comencemos con una regresión lineal simple.
 
 Asignamos los valores de PBI per capita a la variable ‘y’ a explicar y el puntaje de  libertad económica a la variable ‘x’ explicativa. Utilizamos el modulo statsmodels para realizar la regresión y ploteamos los resultados asi como también los residuos:
 
-![](images/linear regression.png)
+![]("images/linear regression.png")
 
 Resultados de la Regresión:
 
@@ -46,7 +46,25 @@ Resultados de la Regresión:
 |  Prob (F-statistic)   |    2.31e-39        |
 
 
-![](images/linear regression 1.png)
+![]("images/linear regression 1.png")
+
+Podemos ver que nuestro R² es razonable y la correlación es estadisticamente significativa. Sin embargo, analizando mas detalladamente los residuos, se aprecia que estos tienen una relación no lineal. Esto quiere decir, que una regresión con otra forma podría ajustarse mejor a nuestros datos.
+
+Probamos entonces con una regresión cuadratica, añadiendo un termino mas a la ecuación, que serán los puntajes de libertad económica elevados al cuadrado.
+
+Corremos la regresión y tenemos:
+
+![]("images/quad regression.png")
+
+Resultados de la Regresión:
+
+|   Conceptos   |    Detalle
+|--------------|------------
+|   R²   |    0,817   
+|   R² ajustado   | 0,815
+|   Durbin-Watson   |   2,131
+|   Prob (F-statistic)   | 4.08e-63
+
 
 
 
