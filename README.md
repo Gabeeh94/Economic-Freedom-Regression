@@ -36,11 +36,14 @@ Asignamos los valores de PBI per capita a la variable ‘y’ a explicar y el pu
 
 ![](https://github.com/Gabeeh94/Economic-Freedom-Regression/blob/038c3368521d8e8a07255fb228098cb96a4ea172/images/linear%20regression.png)
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+|   Resultados de la Regresión  | 
+| -------------------- |:------------------:| 
+| Conceptos            |      Detalle       | 
+|Variable Dependiente  |PBI per Cápita (PPP)|
+|Nº de Observaciones   |         171        |
+|R²                    |        0.638       |
+| Prob (F-statistic)   |    2.31e-39        |
+
 
 
 
