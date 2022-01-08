@@ -13,3 +13,36 @@ En primer lugar, utilizamos pandas para importar los datos y convertirlos en un 
 Después de esto, vamos a crear un scatterplot para ver si podemos ver a simple vista una relación en los datos.
 
 ![](https://github.com/Gabeeh94/Economic-Freedom-Regression/blob/ff025d6a2656057c920f04567a7c4525c4c04acf/images/scatterplot.png)
+
+Podemos ver claramente que a medida que aumenta el puntaje de libertad económica, aumenta el PBI per capita. Ademas, tenemos varios outliers que pueden tener una influencia desmesurada en el resultado de nuestra regresión, marcados como puntos azules. Estos puntos serán eliminados para que no incidan en nuestros resultados
+
+
+
+Los limites fueron elegidos con el siguiente criterio:
+
+Limite Superior = Q3 + 1,5*IQR
+
+Limite Inferior = Q1 – 1,5*IQR
+
+Con:
+
+Q1 = Cuartil 1, punto que contiene el 25% de los valores
+Q3 = Cuartil 3, punto que contiene el 75% de los valores
+IQR = Rango intercuartil, resultado de restar Q3 a Q1
+
+Luego de todo esto, comencemos con una regresión lineal simple.
+
+Asignamos los valores de PBI per capita a la variable ‘y’ a explicar y el puntaje de  libertad económica a la variable ‘x’ explicativa. Utilizamos el modulo statsmodels para realizar la regresión y ploteamos los resultados asi como también los residuos:
+
+![](https://github.com/Gabeeh94/Economic-Freedom-Regression/blob/038c3368521d8e8a07255fb228098cb96a4ea172/images/linear%20regression.png)
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
+
+
+
