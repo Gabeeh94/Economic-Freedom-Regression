@@ -36,6 +36,7 @@ Asignamos los valores de PBI per capita a la variable ‘y’ a explicar y el pu
 
 ![](https://github.com/Gabeeh94/Economic-Freedom-Regression/blob/038c3368521d8e8a07255fb228098cb96a4ea172/images/linear%20regression.png)
 
+| :---------------------------------------:|
 |   Resultados de la Regresión              | 
 | -------------------- |:------------------:| 
 |    Conceptos         |      Detalle       | 
