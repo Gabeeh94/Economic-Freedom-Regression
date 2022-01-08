@@ -38,7 +38,6 @@ Asignamos los valores de PBI per capita a la variable ‘y’ a explicar y el pu
 
 | ---------------------------------------|
 |   Resultados de la Regresión              | 
-| -------------------- |:------------------:| 
 |    Conceptos         |      Detalle       | 
 | -------------------- |:------------------:|
 |  Variable Dependiente  |PBI per Cápita (PPP)|
