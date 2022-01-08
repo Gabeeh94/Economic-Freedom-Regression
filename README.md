@@ -34,7 +34,7 @@ Luego de todo esto, comencemos con una regresión lineal simple.
 
 Asignamos los valores de PBI per capita a la variable ‘y’ a explicar y el puntaje de  libertad económica a la variable ‘x’ explicativa. Utilizamos el modulo statsmodels para realizar la regresión y ploteamos los resultados asi como también los residuos:
 
-![]("images/linear regression.png")
+![](https://github.com/Gabeeh94/Economic-Freedom-Regression/blob/6c5022634658247223c51cabded5ac753edde6e0/images/linear%20regression.png)
 
 Resultados de la Regresión:
 
@@ -46,7 +46,7 @@ Resultados de la Regresión:
 |  Prob (F-statistic)   |    2.31e-39        |
 
 
-![](/images/linear regression 1.png)
+![](https://github.com/Gabeeh94/Economic-Freedom-Regression/blob/ec6db0b3b3aea104e9261484a28c52153f112404/images/linear%20regression%201.png)
 
 Podemos ver que nuestro R² es razonable y la correlación es estadisticamente significativa. Sin embargo, analizando mas detalladamente los residuos, se aprecia que estos tienen una relación no lineal. Esto quiere decir, que una regresión con otra forma podría ajustarse mejor a nuestros datos.
 
@@ -54,7 +54,7 @@ Probamos entonces con una regresión cuadratica, añadiendo un termino mas a la 
 
 Corremos la regresión y tenemos:
 
-![]("/images/quad regression.png")
+![](https://github.com/Gabeeh94/Economic-Freedom-Regression/blob/6c5022634658247223c51cabded5ac753edde6e0/images/quad%20regression.png)
 
 Resultados de la Regresión:
 
@@ -66,6 +66,13 @@ Resultados de la Regresión:
 |   Prob (F-statistic)   | 4.08e-63
 
 
+![](https://github.com/Gabeeh94/Economic-Freedom-Regression/blob/6c5022634658247223c51cabded5ac753edde6e0/images/quad%20regression%201.png)
 
+Tenemos ahora un R² todavía mas alto, de 0,817 y lo que es mas importante, el R² ajustado es apenas menor, de 0,815, lo que quiere decir que la variable que agregamos realmente aumenta el poder explicativo de nuestro modelo.
 
+En el analisis de los residuos, lo que podemos ver es que nuestro problema de no-linealidad obviamente desapareció, teniendo residuos bastante mas uniformes. Sin embargo, a medida que los puntajes de libertad económica aumentan, los residuos se hacen mas dispersos y erraticos. Esto quiere decir que tenemos un problema de heterocedasticidad, es decir, que en el extremo superior, nuestro modelo no es tan preciso como en los valores mas medianos o inferiores. Podemos comprobarlo al leer el valor de Durbin-Watson, que al ser mayor a 2 muestra cierta heterocedasticidad (siendo entre 1 y 2 los valores ideales de homocedasticidad)
+
+Nuestro modelo final sería: y = 20,0134x² - 950,0644x
+
+Conclusión: Podemos afirmar que existe una relación estadisticamente significativa entre el PBI per capita por paridad de poder adquisitivo y el puntaje de libertad económica de la fundación Heritage. La explicación de la heterocedasticidad propuesta es que una economía relativamente libre es condición necesaria para el desarrollo económico, pero el tiempo que llevan siendo aplicadas estas medidas influyen de gran manera en el estado actual del PBI per Capita. Para poner un ejemplo, Estonia tiene una alta libertad económica pero es un país relativamente pobre comparado con Japón que está mas abajo en el ranking de libertad económica. Sin embargo, las reformas liberales en Estonia se tomaron en los 90s, mientras que Japón lleva desde el fin de la 2da Guerra Mundial con una economía relativamente libre.
 
