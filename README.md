@@ -6,7 +6,7 @@ Para responder esta pregunta, utilizaremos diferentes regresiones que tomarán c
 
 Todos los datos fueron extraídos de: https://www.heritage.org/index/excel/2021/index2021_data.xls
 
-Para este analisis utilizaremos Python y los modulos numpy, Pandas, statsmodel y matplotlib.
+Para este analisis utilizaremos Python y los modulos numpy, Pandas, statsmodel y matplotlib. El código y su ejecución paso a paso se encuentra en los jupyter notebooks en el repo.
 
 En primer lugar, utilizamos pandas para importar los datos y convertirlos en un dataframe de pandas. Luego la limpiamos de aquellos países de los que no contamos con la información suficiente. Si abrimos la variable en la que guardamos estos países, vemos que los eliminados son 6: Irak, Libya, Liechtenstein, Somalia, Syria y Yemen.
 
