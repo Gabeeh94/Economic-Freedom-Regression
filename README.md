@@ -42,8 +42,9 @@ Resultados de la Regresión:
 | -------------------- |:------------------:|
 |  Variable Dependiente  |PBI per Cápita (PPP)|
 |  Nº de Observaciones   |         171        |
-|  R²                    |        0.638       |
-|  Prob (F-statistic)   |    2.31e-39        |
+|  R²                    |        0.565       |
+|   R² ajustado   | 0.562
+|  Prob (F-statistic)   |    2.38e-32        |
 
 
 ![](https://github.com/Gabeeh94/Economic-Freedom-Regression/blob/ec6db0b3b3aea104e9261484a28c52153f112404/images/linear%20regression%201.png)
@@ -60,10 +61,10 @@ Resultados de la Regresión:
 
 |   Conceptos   |    Detalle
 |--------------|------------
-|   R²   |    0,817   
-|   R² ajustado   | 0,815
-|   Durbin-Watson   |   2,131
-|   Prob (F-statistic)   | 4.08e-63
+|   R²   |    0.626   
+|   R² ajustado   | 0.621
+|   Durbin-Watson   |   2.172
+|   Prob (F-statistic)   | 1.42e-36
 
 
 ![](https://github.com/Gabeeh94/Economic-Freedom-Regression/blob/6c5022634658247223c51cabded5ac753edde6e0/images/quad%20regression%201.png)
@@ -72,7 +73,7 @@ Tenemos ahora un R² todavía mas alto, de 0,817 y lo que es mas importante, el 
 
 En el analisis de los residuos, lo que podemos ver es que nuestro problema de no-linealidad obviamente desapareció, teniendo residuos bastante mas uniformes. Sin embargo, a medida que los puntajes de libertad económica aumentan, los residuos se hacen mas dispersos y erraticos. Esto quiere decir que tenemos un problema de heterocedasticidad, es decir, que en el extremo superior, nuestro modelo no es tan preciso como en los valores mas medianos o inferiores. Podemos comprobarlo al leer el valor de Durbin-Watson, que al ser mayor a 2 muestra cierta heterocedasticidad (siendo entre 1 y 2 los valores ideales de homocedasticidad)
 
-Nuestro modelo final sería: y = 20,0134x² - 950,0644x
+Nuestro modelo final sería: y = 42.9777x² - 3854.5294x + 8.99e+04
 
 Conclusión: Podemos afirmar que existe una relación estadisticamente significativa entre el PBI per capita por paridad de poder adquisitivo y el puntaje de libertad económica de la fundación Heritage. La explicación de la heterocedasticidad propuesta es que una economía relativamente libre es condición necesaria para el desarrollo económico, pero el tiempo que llevan siendo aplicadas estas medidas influyen de gran manera en el estado actual del PBI per Capita. Para poner un ejemplo, Estonia tiene una alta libertad económica pero es un país relativamente pobre comparado con Japón que está mas abajo en el ranking de libertad económica. Sin embargo, las reformas liberales en Estonia se tomaron en los 90s, mientras que Japón lleva desde el fin de la 2da Guerra Mundial con una economía relativamente libre.
 
