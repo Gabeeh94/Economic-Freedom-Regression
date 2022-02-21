@@ -34,7 +34,7 @@ Luego de todo esto, comencemos con una regresión lineal simple.
 
 Asignamos los valores de PBI per capita a la variable ‘y’ a explicar y el puntaje de  libertad económica a la variable ‘x’ explicativa. Utilizamos el modulo statsmodels para realizar la regresión y ploteamos los resultados asi como también los residuos:
 
-![]('images/linear regression.png')
+![](images/linear_regression.png)
 
 Resultados de la Regresión:
 
@@ -47,7 +47,7 @@ Resultados de la Regresión:
 |  Prob (F-statistic)   |    2.38e-32        |
 
 
-![](https://github.com/Gabeeh94/Economic-Freedom-Regression/blob/ec6db0b3b3aea104e9261484a28c52153f112404/images/linear%20regression%201.png)
+![](/images/linear_regression1.png)
 
 Podemos ver que nuestro R² es razonable y la correlación es estadisticamente significativa. Sin embargo, analizando mas detalladamente los residuos, se aprecia que estos tienen una relación no lineal. Esto quiere decir, que una regresión con otra forma podría ajustarse mejor a nuestros datos.
 
@@ -55,7 +55,7 @@ Probamos entonces con una regresión cuadratica, añadiendo un termino mas a la 
 
 Corremos la regresión y tenemos:
 
-![](https://github.com/Gabeeh94/Economic-Freedom-Regression/blob/6c5022634658247223c51cabded5ac753edde6e0/images/quad%20regression.png)
+![](images/quad_regression.png)
 
 Resultados de la Regresión:
 
@@ -67,7 +67,7 @@ Resultados de la Regresión:
 |   Prob (F-statistic)   | 1.42e-36
 
 
-![](https://github.com/Gabeeh94/Economic-Freedom-Regression/blob/6c5022634658247223c51cabded5ac753edde6e0/images/quad%20regression%201.png)
+![](images/quad_regression1.png)
 
 Tenemos ahora un R² todavía mas alto, de 0,817 y lo que es mas importante, el R² ajustado es apenas menor, de 0,815, lo que quiere decir que la variable que agregamos realmente aumenta el poder explicativo de nuestro modelo.
 
