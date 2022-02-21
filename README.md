@@ -34,7 +34,7 @@ Luego de todo esto, comencemos con una regresión lineal simple.
 
 Asignamos los valores de PBI per capita a la variable ‘y’ a explicar y el puntaje de  libertad económica a la variable ‘x’ explicativa. Utilizamos el modulo statsmodels para realizar la regresión y ploteamos los resultados asi como también los residuos:
 
-![](https://github.com/Gabeeh94/Economic-Freedom-Regression/blob/6c5022634658247223c51cabded5ac753edde6e0/images/linear%20regression.png)
+![](/images/linear regression.png)
 
 Resultados de la Regresión:
 
