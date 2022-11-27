@@ -32,7 +32,7 @@ IQR = Interquartile range, result of subtracting Q3 from Q1
 
 After all this, let's start with a simple linear regression.
 
-We assign the values ​​of GDP per capita to the 'y' variable to be explained and the economic freedom score to the explanatory 'x' variable. We use the statsmodels module to run the regression and plot the results as well as the residuals:
+We assign the values of GDP per capita to the 'y' variable to be explained and the economic freedom score to the explanatory 'x' variable. We use the statsmodels module to run the regression and plot the results as well as the residuals:
 
 ![](images/linear_regression.png)
 
@@ -75,4 +75,4 @@ In the analysis of the residuals, what we can see is that our non-linearity prob
 
 Our final model would be: y = 42.9777x² - 3854.5294x + 8.99e+04
 
-Conclusion: We can state that there is a statistically significant relationship between GDP per capita by purchasing power parity and the Heritage Foundation's economic freedom score. The explanation of the proposed heteroscedasticity is that a relatively free economy is a necessary condition for economic development, but the time that measures have been applied greatly influence the current state of GDP per Capita. To give an example, Estonia has high economic freedom but is a relatively poor country compared to Japan which is lower in the economic freedom ranking. However, the liberal reforms in Estonia were taken in the 1990s, while Japan has been since the end of the 2nd
+Conclusion: We can state that there is a statistically significant relationship between GDP per capita by purchasing power parity and the Heritage Foundation's economic freedom score. The explanation of the proposed heteroscedasticity is that a relatively free economy is a necessary condition for economic development, but the time that measures have been applied greatly influence the current state of GDP per Capita. To give an example, Estonia has high economic freedom but it is a relatively poor country compared to Japan which is lower in the economic freedom ranking. However, the liberal reforms in Estonia were taken in the 1990s, while Japan has been integrated to the world since the end of the 2nd World War.
